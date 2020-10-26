@@ -1,5 +1,7 @@
 # Creality Ender-3 V2 files from https://cat5.tv/3dprinting
-A repository of all my Ender-3 V2 files for the video series found at https://cat5.tv/3dprinting
+A repository of all my Ender-3 V2 files for the video series on Category5 Technology TV.
+
+**Video Series and Documentation:** https://cat5.tv/3dprinting
 
 **MyMiniFactory Profile:** https://www.myminifactory.com/users/BaldNerd
 
