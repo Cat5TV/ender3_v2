@@ -1,4 +1,6 @@
-; Robbie's Ender-3 V2 Start G-Code
+; Robbie Ferguson's Ender-3 V2 Start G-Code
+; As used on Category5 Technology TV
+; https://cat5.tv/3dprinter
 M140 S60
 M105
 M190 S60
@@ -27,3 +29,4 @@ G1 Z2.0 F3000 ;Move Z Axis up
 G92 E0
 G92 E0
 G1 F2700 E-5
+; End of start code
