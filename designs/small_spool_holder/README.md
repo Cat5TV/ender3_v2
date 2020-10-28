@@ -16,6 +16,7 @@ The "Z" on the spool holder is my son Zech's initial, because it's for him I mad
 
 Infill: 20%\
 Infill Pattern: Cubic
+Supports: Required
 
 Robbie // The Bald Nerd\
 https://cat5.tv/3dprinting
