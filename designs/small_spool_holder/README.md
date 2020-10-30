@@ -4,7 +4,7 @@
 
 This design is also available on [MyMiniFactory](https://www.myminifactory.com/object/3d-print-139585).
 
-![Small Spool for Ender-3 v2](Small Spool for Ender-3 v2.png?raw=true)
+![Small Spool for Ender-3 v2](preview.png?raw=true "Rendering of Small Spool for Ender-3 v2")
 
 I wanted to be able to get several colors in a single order of filament, so I opted for 250G spools in a 4-pack, which costs the same as a single 1KG spool. https://amzn.to/35Jgnc2
 
