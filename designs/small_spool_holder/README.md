@@ -6,11 +6,15 @@ I wanted to be able to get several colors in a single order of filament, so I op
 
 However, the spools don't fit on the stock Ender-3 V2 spool holder--the hole is too small. If only I had a 3D printer. WAIT - I do, *I do have a 3D printer*. So I picked up a cheap 1KG spool (which fits the stock spool holder), designed and printed a custom spool holder just for these little baby spools.
 
+I've also created an optional nut for the Ender-3 V2 in case you've lost or broken the original.
+
 This design is also available on [MyMiniFactory](https://www.myminifactory.com/object/3d-print-139585).
 
 ## Rendering
 
-![Small Spool for Ender-3 v2](preview.png?raw=true "Rendering of Small Spool for Ender-3 v2")
+![Small Spool for Ender-3 v2](preview.png?raw=true)
+
+![Ender-3 v2 Spool Nut](preview_nut.png?raw=true)
 
 ## Attribution
 
