@@ -15,7 +15,7 @@ The "Z" on the spool holder is my son Zech's initial, because it's for him I mad
 ## Print Settings
 
 Infill: 20%\
-Infill Pattern: Cubic
+Infill Pattern: Cubic\
 Supports: Required (otherwise the nut will string)
 
 Robbie // The Bald Nerd\
