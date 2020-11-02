@@ -10,11 +10,18 @@ I've also created an optional nut for the Ender-3 V2 in case you've lost or brok
 
 This design is also available on [MyMiniFactory](https://www.myminifactory.com/object/3d-print-139585).
 
+## Photos
+
+![Small Spool for Ender-3 v2](images/installed.jpg?raw=true)
+
+![Small Spool for Ender-3 v2](images/spool.jpg?raw=true)
+
+![Small Spool for Ender-3 v2](images/printed.jpg?raw=true)
+
+
 ## Rendering
 
 ![Small Spool for Ender-3 v2](preview.png?raw=true)
-
-![Ender-3 v2 Spool Nut](preview_nut.png?raw=true)
 
 ## Attribution
 
