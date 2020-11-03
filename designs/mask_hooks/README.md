@@ -8,6 +8,14 @@ This is my first 100% custom design. I created it from scratch and put it throug
 
 This design is also available on [MyMiniFactory](https://www.myminifactory.com/object/3d-print-132291).
 
+## File Versions
+
+**1.0 (Original Design)**: Print, and then use your side cutters to snip the ring as seen in my picture. Twist sideways to affix to the cold water pipe. These must be snipped as shown, and will hold nice and snug to any half-inch pipe.
+
+**2.0**: Revised version features a hook on both sides of each stem. Also comes pre-cut, so no need to cut with your side cutters.
+
+**2.2**: Updated to my wife's specifications: Now, the stem is slightly longer (making it easier for her to reach).
+
 ## Photos
 
 ## Rendering
