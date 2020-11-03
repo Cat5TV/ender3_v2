@@ -18,6 +18,8 @@ This design is also available on [MyMiniFactory](https://www.myminifactory.com/o
 
 ## Photos
 
+![Mask Hooks 2.2](images/2.2.jpg?raw=true)
+
 ## Rendering
 
 ![Mask Hooks 2.2](preview.png?raw=true)
