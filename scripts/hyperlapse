@@ -21,7 +21,7 @@ then
 fi
 
 printf "Adding trigger to $1... "
-trigger=";TRIGGER\nG90; Absolute\nG1 E-2 F2700; Retract a bit\nG1 F9000 X190 Y210; Quick\nG1 F1000 X197; Poke\nG4 P500; Wait\nG1 F9000 X190; Back\nG1 E2 F2700; Return filament position"
+trigger=";TRIGGER\nG90; Absolute\nG1 E-2 F2700; Retract a bit\nG1 F9000 X190 Y210; Quick\nG1 F1000 X197; Poke\nG4 P500; Wait\nG1 F9000 X190; Back\nG1 E0.15 F2700; Return filament position + .15mm"
 sed -i "/^;LAYER:.*/i $trigger" $1
 echo "Done."
 echo
