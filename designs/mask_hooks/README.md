@@ -20,6 +20,8 @@ This design is also available on [MyMiniFactory](https://www.myminifactory.com/o
 
 ## Rendering
 
+![Mask Hooks 2.2](preview.png?raw=true)
+
 ## Print Settings
 
 Infill: 30%\
