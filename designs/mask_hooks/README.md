@@ -14,7 +14,7 @@ This design is also available on [MyMiniFactory](https://www.myminifactory.com/o
 
 ## Print Settings
 
-Infill: 20%\
+Infill: 30%\
 Infill Pattern: Triangular\
 Supports: None needed
 
