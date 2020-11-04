@@ -12,6 +12,8 @@ This design is also available on [MyMiniFactory](https://www.myminifactory.com/o
 
 ## Photos
 
+![Small Spool for Ender-3 v2](images/bluespool.jpg?raw=true)
+
 ![Small Spool for Ender-3 v2](images/installed.jpg?raw=true)
 
 ![Small Spool for Ender-3 v2](images/spool.jpg?raw=true)
