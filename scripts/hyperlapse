@@ -3,6 +3,18 @@ import sys
 import re
 output = "; gcode output hyperlapse trigger v1.0 via https://cat5.tv/3dprinting\n"
 try:
+  lr = sys.argv[2].strip()
+  left = ['l','left']
+  right = ['r','right']
+  if lr.lower() in left:
+    lr = "l"
+  if lr.lower() in right:
+    lr = "r"
+  print lr
+except IndexError:
+  lr = "l"
+  pass
+try:
   with open(sys.argv[1],'r') as gcode:
     for line in gcode:
       line = line.strip()
@@ -21,14 +33,26 @@ try:
         output += ";TRIGGER\n"
         output += "G90; Absolute\n"
         output += "G1 E-2 F2700; Retract filament 2mm\n"
-        output += "G1 F9000 X190 Y210; Quick move to switch\n"
-        output += "G1 F1000 X197; Tap the button\n"
+        if lr == "l":
+          output += "G1 F9000 X12 Y215; Quick move to switch on left\n"
+          output += "G1 F1000 X0; Tap the button\n"
+        if lr == "r":
+          output += "G1 F9000 X190 Y210; Quick move to switch on right\n"
+          output += "G1 F1000 X197; Tap the button\n"
         output += "G4 P500; Smile!\n"
-        output += "G1 F9000 X190; Back up\n"
-        output += "G0 " + lastcoord + " F9000; Return to print\n"
+        if lr == "l":
+          output += "G1 F9000 X12; Back up\n"
+        if lr == "r":
+          output += "G1 F9000 X190; Back up\n"
+        try:
+          output += "G0 " + lastcoord + " F9000; Return to print\n"
+        except NameError:
+          pass
         output += "G1 E2 F800; Return filament position\n"
       output += line + "\n"
 
     print output
 except IndexError:
-  sys.exit("Usage: " + sys.argv[0] + " myfile.gcode > output.gcode")
+  sys.exit("Usage: " + sys.argv[0] + " myfile.gcode [l|r]\n       Where myfile.gcode is the input file. l[eft] or r[ight] are the location of your switch. l is default.\n\nNote: Can pipe the output to a new file.")
+except IOError:
+  sys.exit(sys.argv[1] + " not found.")
