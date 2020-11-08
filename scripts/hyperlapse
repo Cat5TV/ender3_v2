@@ -31,8 +31,9 @@ try:
         lastcoord = x + " " + y
       if ';LAYER:' in line:
         output += ";TRIGGER\n"
+        output += "G91; Relative movement for retraction\n"
+        output += "G1 E-0.8 F2100; Retract -0.8mm at 2100mm/min\n"
         output += "G90; Absolute\n"
-        output += "G1 E-2 F2700; Retract filament 2mm\n"
         if lr == "l":
           output += "G1 F9000 X12 Y215; Quick move to switch on left\n"
           output += "G1 F1000 X0; Tap the button\n"
@@ -48,7 +49,9 @@ try:
           output += "G0 " + lastcoord + " F9000; Return to print\n"
         except NameError:
           pass
-        output += "G1 E2 F800; Return filament position\n"
+        output += "G91; Relative movement to return filament\n"
+        output += "G1 E0.8 F2100; Return filament\n"
+        output += "G90; Back to absolute"
       output += line + "\n"
 
     print output
