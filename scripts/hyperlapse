@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import sys
 import re
-output = "; gcode output hyperlapse trigger v1.1 via https://cat5.tv/3dprinting\n"
+output = "; gcode output hyperlapse trigger v1.2 via https://cat5.tv/3dprinting\n"
 try:
   lr = sys.argv[2].strip()
   left = ['l','left']
@@ -32,7 +32,8 @@ try:
       if ';LAYER:' in line:
         output += ";TRIGGER\n"
         output += "G91; Relative movement for retraction\n"
-        output += "G1 E-2 F2100; Retract -2mm at 2100mm/min\n"
+        # Note the retraction distance is set for bowden feed. For direct, use 1-2mm.
+        output += "G1 E-6 F2400; Retract filament\n"
         output += "G90; Absolute\n"
         if lr == "l":
           output += "G1 F9000 X12 Y215; Quick move to switch on left\n"
@@ -50,7 +51,7 @@ try:
         except NameError:
           pass
         output += "G91; Relative movement to return filament\n"
-        output += "G1 E2 F2100; Return filament\n"
+        output += "G1 E7 F2400; Return filament\n"
         output += "G90; Back to absolute"
       output += line + "\n"
 
