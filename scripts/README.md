@@ -14,4 +14,4 @@ Not only does hyperlapse automate the insertion process, placing trigger code be
 
 ![Sample](trigger_test_v1.2.gif)
 
-Test from version 1.2
+Test from version 1.2 - Still a bit of an issue with the skirt, but the actual print goes well with almost no stringing. Extruder retraction 6mm and return is 7mm.
