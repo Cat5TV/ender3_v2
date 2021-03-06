@@ -2,7 +2,7 @@
 
 # Hyperlapse Trigger Injector Script
 # Script Version
-ver = 1.3
+ver = 1.4
 # By Robbie Ferguson // The Bald Nerd
 # Category5 TV Network
 # View the series: https://cat5.tv/3dprinting
@@ -24,7 +24,6 @@ try:
     lr = "l"
   if lr.lower() in right:
     lr = "r"
-  print lr
 except IndexError:
   lr = "l"
   pass
