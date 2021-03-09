@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-# Hyperlapse Trigger Injector Script
+# Timelapse Trigger Injector Script
 # Script Version
-ver = 1.4
+ver = 1.5
 # By Robbie Ferguson // The Bald Nerd
 # Category5 TV Network
 # View the series: https://cat5.tv/3dprinting
@@ -14,7 +14,7 @@ import re
 # Some lines are commented which may cause issues. I've left them here for experimentation purposes, but commented out so they're not used in production.
 
 # I recommend you leave this header in your gcode output so you can later refer to it and know which version of my script you used
-output = "; Hyperlapse Trigger v" + str(ver) + " by Robbie Ferguson - https://cat5.tv/3dprinting\n"
+output = "; Timelapse Trigger v" + str(ver) + " by Robbie Ferguson - https://cat5.tv/3dprinting\n"
 count = 0
 try:
   lr = sys.argv[2].strip()
@@ -66,7 +66,7 @@ try:
     z = ""
     for line in gcode:
       line = line.strip()
-      if ';HYPERLAPSE TRIGGER' in line:
+      if ';TIMELAPSE TRIGGER' in line:
         sys.exit(sys.argv[1] + " already has trigger code.")
       coord = re.findall(r'[XYZ].?\d+.\d+',line)
       if coord:
@@ -96,7 +96,7 @@ try:
            pass
         lastcoord = x + " " + y
       if trigger_point in line:
-        output += ";HYPERLAPSE TRIGGER\n"
+        output += ";TIMELAPSE TRIGGER\n"
         count += 1
         output += "M117 Frame " + str(count) + "\n"
         output += "G91; Relative movement\n"
@@ -125,7 +125,7 @@ try:
     # Add frame count
     finaloutput = ""
     count2 = 0
-    fps = 30 # Frames per second of resulting hyperlapse
+    fps = 30 # Frames per second of resulting timelapse
     totalSeconds = int(round(count/fps))
     for line in output.splitlines():
       line = line.strip()
@@ -133,7 +133,7 @@ try:
       if 'M117 Frame' in line:
         count2 += 1
         currentSeconds = int(round(count2/fps))
-        finaloutput += "/" + str(count) + " (" + str(currentSeconds) + "s/"+ str(totalSeconds) + "s " + str(fps) + "FPS); Output Hyperlapse Progress to Screen"
+        finaloutput += "/" + str(count) + " (" + str(currentSeconds) + "s/"+ str(totalSeconds) + "s " + str(fps) + "FPS); Output Timelapse Progress to Screen"
       finaloutput += "\n"
 
     # Output the gcode and take a picture at the end of the final product
