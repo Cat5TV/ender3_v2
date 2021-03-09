@@ -12,6 +12,8 @@ A python script that takes any gcode and injects my timelapse button press trigg
 
 Not only does timelapse automate the insertion process, placing trigger code between each layer to snap a picture for your timelapse, but it also retracts the filament to reduce stringing, and even returns to the print area prior to returning the filament to the hot end. I have also included an option for either left (default) or right switch positions.
 
+There is a web-based implementation of my timelapse script found here: https://category5.tv/tools/3dprinting/timelapse/
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/qaSmzV_p_Hg/0.jpg)](https://www.youtube.com/watch?v=qaSmzV_p_Hg)
 
 Test from version 1.3 - I still need to lock my camera exposure, but the hyperlapse script worked perfectly. The only stringing you see is actually due to the model I printed (was a scan of a house from a drone).
